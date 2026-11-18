@@ -28,3 +28,9 @@ export const cancelar = async () => {
   const respuesta = await axios.post(`${API_URL}/cancelar`);
   return respuesta.data; // { mensaje }
 };
+
+// Menú principal (no es parte del CU 28): usuario logueado, su CM y bolsines por recibir.
+export const mostrarMenu = async () => {
+  const respuesta = await axios.get('/menu');
+  return respuesta.data; // { nombreUsuario, nombreEmpleado, comisionMedica, bolsinesPorRecibir: [...] }
+};
