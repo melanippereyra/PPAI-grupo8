@@ -115,25 +115,25 @@ public class Bolsin implements IAgregado {
 
     // ---------- Recepción (paso 11 del CU) ----------
 
-    public void recibirBolsin(Estado estadoRecibido, Estado estadoRecibidoYAceptado,
-                              Estado estadoRecibidaYAceptada, LocalDateTime fechaHoraActual,
+    public void recibirBolsin(Estado estadoRecibido, Estado estadoRemito,
+                              Estado estadoDoc, LocalDateTime fechaHora,
                               Empleado responsable) {
         // 1) cierra el cambio de estado actual
         for (CambioEstadoBolsin cambio : cambioEstado) {
             if (cambio.sosActual()) {
-                cambio.setFechaYHoraFin(fechaHoraActual);
+                cambio.setFechaYHoraFin(fechaHora);
             }
         }
         // 2) crea el nuevo cambio "Recibido en CM Destino"
-        crearCambioEstadoBolsin(estadoRecibido, fechaHoraActual, responsable);
+        crearCambioEstadoBolsin(estadoRecibido, fechaHora, responsable);
 
         // 3) loop recorrer remitos del bolsin
         IIterador iterador = crearIterador(remito.toArray(new Remito[0]));
         iterador.primero();
         while (!iterador.haTerminado()) {
             Remito remitoActual = (Remito) iterador.elementoActual();
-            remitoActual.recibirRemito(estadoRecibidoYAceptado, estadoRecibidaYAceptada,
-                    fechaHoraActual, responsable);
+            remitoActual.recibirRemito(estadoRemito, estadoDoc,
+                    fechaHora, responsable);
             iterador.siguiente();
         }
     }

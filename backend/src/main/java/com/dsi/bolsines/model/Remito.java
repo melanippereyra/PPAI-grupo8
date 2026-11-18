@@ -71,15 +71,15 @@ public class Remito implements IAgregado {
      * Paso 11 del CU: el remito pasa a "Recibido y Aceptado" y cada
      * documentación a "Recibida y Aceptada" (loop recorrer Detalles Remito).
      */
-    public void recibirRemito(Estado estadoRecibidoYAceptado, Estado estadoRecibidaYAceptada,
-                              LocalDateTime fechaHoraActual, Empleado responsable) {
-        setEstado(estadoRecibidoYAceptado);
+    public void recibirRemito(Estado estadoRemito, Estado estadoDoc,
+                              LocalDateTime fechaHora, Empleado responsable) {
+        setEstado(estadoRemito);
 
         IIterador iterador = crearIterador(detalleRemito.toArray(new DetalleRemito[0]));
         iterador.primero();
         while (!iterador.haTerminado()) {
             DetalleRemito detalle = (DetalleRemito) iterador.elementoActual();
-            detalle.aceptarDocumentacion(estadoRecibidaYAceptada, fechaHoraActual, responsable);
+            detalle.aceptarDocumentacion(estadoDoc, fechaHora, responsable);
             iterador.siguiente();
         }
     }

@@ -12,6 +12,7 @@ C:\Users\Constanza\OneDrive\Documentos\3°AÑO\DSI\PPAI-grupo8\backend\src\main\
 C:\Users\Constanza\OneDrive\Documentos\3°AÑO\DSI\PPAI-grupo8\backend\src\main\java\com\dsi\bolsines\dto\BolsinResponse.java
 C:\Users\Constanza\OneDrive\Documentos\3°AÑO\DSI\PPAI-grupo8\backend\src\main\java\com\dsi\bolsines\iterador\IAgregado.java
 C:\Users\Constanza\OneDrive\Documentos\3°AÑO\DSI\PPAI-grupo8\backend\src\main\java\com\dsi\bolsines\dto\InicioResponse.java
+C:\Users\Constanza\OneDrive\Documentos\3°AÑO\DSI\PPAI-grupo8\backend\src\main\java\com\dsi\bolsines\dto\MenuResponse.java
 C:\Users\Constanza\OneDrive\Documentos\3°AÑO\DSI\PPAI-grupo8\backend\src\main\java\com\dsi\bolsines\model\Remito.java
 C:\Users\Constanza\OneDrive\Documentos\3°AÑO\DSI\PPAI-grupo8\backend\src\main\java\com\dsi\bolsines\model\Estado.java
 C:\Users\Constanza\OneDrive\Documentos\3°AÑO\DSI\PPAI-grupo8\backend\src\main\java\com\dsi\bolsines\dto\SeleccionBolsinResponse.java
@@ -25,6 +26,7 @@ C:\Users\Constanza\OneDrive\Documentos\3°AÑO\DSI\PPAI-grupo8\backend\src\main\
 C:\Users\Constanza\OneDrive\Documentos\3°AÑO\DSI\PPAI-grupo8\backend\src\main\java\com\dsi\bolsines\dto\RemitoResponse.java
 C:\Users\Constanza\OneDrive\Documentos\3°AÑO\DSI\PPAI-grupo8\backend\src\main\java\com\dsi\bolsines\model\Documentacion.java
 C:\Users\Constanza\OneDrive\Documentos\3°AÑO\DSI\PPAI-grupo8\backend\src\main\java\com\dsi\bolsines\repository\IBolsinRepository.java
+C:\Users\Constanza\OneDrive\Documentos\3°AÑO\DSI\PPAI-grupo8\backend\src\main\java\com\dsi\bolsines\controller\PantallaMenuPrincipal.java
 C:\Users\Constanza\OneDrive\Documentos\3°AÑO\DSI\PPAI-grupo8\backend\src\main\java\com\dsi\bolsines\iterador\IteradorBolsines.java
 C:\Users\Constanza\OneDrive\Documentos\3°AÑO\DSI\PPAI-grupo8\backend\src\main\java\com\dsi\bolsines\repository\ISesionRepository.java
 C:\Users\Constanza\OneDrive\Documentos\3°AÑO\DSI\PPAI-grupo8\backend\src\main\java\com\dsi\bolsines\model\CambioEstadoDocumentacion.java
